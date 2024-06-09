@@ -30,7 +30,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@main
       - name: Optimize AMP
-        uses: asurbernardo/amp-optimizer-action@master
+        uses: san-s-on/amp-optimizer-action@master
       - name: Upload artifact
         uses: actions/upload-pages-artifact@main
 
