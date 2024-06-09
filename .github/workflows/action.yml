@@ -28,11 +28,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: Setup Pages
-        uses: actions/configure-pages@master
+        uses: actions/configure-pages@main
       - name: Optimize AMP
         uses: asurbernardo/amp-optimizer-action@master
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@master
+        uses: actions/upload-pages-artifact@main
 
   # Deployment job
   deploy:
@@ -44,4 +44,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@master
+        uses: actions/deploy-pages@main
