@@ -33,6 +33,8 @@ jobs:
         uses: san-s-on/amp-optimizer-action@master
       - name: Upload artifact
         uses: actions/upload-pages-artifact@main
+        with:
+          path: '.'
 
   # Deployment job
   deploy:
